@@ -3,6 +3,8 @@
 import os
 import sys
 
+import webbrowser
+
 
 def main():
     """Run administrative tasks."""
@@ -20,3 +22,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+
+if __name__ == "__main__":
+    webbrowser.open('http://127.0.0.1:8000/swagger-ui/')
+    from django.core.management import execute_from_command_line
+    execute_from_command_line(sys.argv)
